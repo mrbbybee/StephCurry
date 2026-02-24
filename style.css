@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+    background-color: #f57c00;
+    background-image:
+        radial-gradient(circle at center, transparent 60%, #000 61%, transparent 62%),
+        linear-gradient(90deg, transparent 48%, #000 49%, #000 51%, transparent 52%),
+        linear-gradient(transparent 48%, #000 49%, #000 51%, transparent 52%);
+    background-size: 400px 400px;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #1d428a;
+    color: #ffc72c;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 5px solid #000;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+.slider-container {
+  overflow: hidden;
+}
+
+.image-wrapper {
+  display: flex;
+  width: 300%;
+  animation: slide 5s infinite alternate ease-in-out;
+}
+
+.image-wrapper img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%, 25% { transform: translateX(0); }
+  35%, 60% { transform: translateX(-330px); }
+  70%, 100% { transform: translateX(-670px); }
+}
+h2 {
+    color: #1d428a;
+    border-left: 8px solid #f57c00;
+    padding-left: 10px;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 15px;
+    border: 5px solid #1d428a;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    background-color: #f57c00;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1d428a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.video-title{
+    font-size: 18px;
+    width: 300px;
+    font-weight: bold;
+    line-height:24px;
+}
+
+.video-stats{
+    font-size:14px;
+    color:gray;
+}
+
+.video-author{
+    font-size:18px;
+    color:rgb(96,96,96);
+    margin-top:0;
+}
+
+.video-description{
+    font-size:14px;
+    color:rgb(96,96,96);
+    width:300px;
+    line-height:22px;
+    margin-top:0;
+}
